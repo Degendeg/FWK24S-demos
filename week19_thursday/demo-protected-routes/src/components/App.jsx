@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import About from '../pages/About'
 import Login from '../pages/Login'
 import Dashboard from '../pages/Dashboard'
 import Settings from '../pages/Settings'
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         {/* Här är våran wrapper som pekar på ProtectedRoute komponenten */}
         <Route element={<ProtectedRoute />}>
