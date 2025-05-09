@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../index.css'
 
 const Login = () => {
   const [username, setUsername] = useState('')
@@ -42,11 +43,11 @@ const Login = () => {
           Login
         </button>
       </form>
-      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md mt-5">
-        <details>
-          <summary>credentials here 🆔</summary>
-          user123 : pwd123
-        </details>
+      <div className="bg-gray-700 p-4 rounded-lg shadow-md w-full max-w-md mt-5">
+        <span className="select-all border border-gray-300 bg-gray-100 text-sm text-black px-1 rounded mr-2">user123</span>
+        <span className="mr-2">:</span>
+        <span className="select-all border border-gray-300 bg-gray-100 text-sm text-black px-1 rounded">pwd123</span>
+        <span className="mt-1 float-right text-xs">you can change credentials in <strong>.env</strong></span>
       </div>
     </div>
   )
