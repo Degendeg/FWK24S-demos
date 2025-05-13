@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import purify from 'dompurify'
 import './App.css'
-import Child from './Child'
 
 function App() {
   const [value, setValue] = useState("<img onError=alert('Hacked!') src='fasfasfsfa.com'>")
