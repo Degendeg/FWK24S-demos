@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="min-h-screen py-10 px-4 bg-gray-100">
       <div className="mt-[5vh] p-20 m-20 bg-white">
-        <h1 className="text-3xl font-bold text-center mb-6">🍽 Sök efter en måltid</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">🍽 Sök efter en maträtt</h1>
         <div className="max-w-xl mx-auto">
           <input
             type="text"
